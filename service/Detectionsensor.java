@@ -1,4 +1,5 @@
 package service;
+
 import Model.Hazard;
 import Model.Sensor;
 
@@ -7,6 +8,9 @@ public class Detectionsensor {
     private static final double FIRE_TEMPERATURE_THRESHOLD = 5.0;
     private static final double EARTHQUAKE_VIBRATION_THRESHOLD = 45.0;
     private static final double HEATWAVE_TEMPERATURE_THRESHOLD = 35.0;
+
+    public Detectionsensor() {
+    }
 
     public Hazard detectHazard(Sensor data) {
         if (data.getRainfall() > FLOOD_RAINFALL_THRESHOLD) {
@@ -25,8 +29,9 @@ public class Detectionsensor {
             String severity = data.getTemperature() > 42.0 ? "HIGH" : "MODERATE";
             return createHazard("HEATWAVE", severity);
         }
-         return createHazard("NONE", "LOW");
+        return createHazard("NONE", "LOW");
     }
+
     private Hazard createHazard(String type, String severity) {
         Hazard hazard = new Hazard();
         hazard.setType(type);

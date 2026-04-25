@@ -104,7 +104,7 @@ java Main
 
 Or simply run Main.java using your IDE.
 
-🌱 Future Improvements
+🌱 Future Improvements 
 Add GUI using Java Swing
 Store data using a database (MySQL)
 Integrate real-time weather APIs
@@ -113,3 +113,83 @@ Improve prediction accuracy
 
 This project is a basic simulation of how climate hazard monitoring systems work. It provides a strong understanding of how real-world disaster detection and alert systems can be designed using Java and OOP principles.
 
+
+Class Design (Your Project Skeleton)
+🔷 1. Abstract Class: HazardResponse
+📌 Purpose:
+
+Represents a general response to any hazard.
+It defines a structure for alerts and rescue actions, but does not implement them.
+
+📋 Requirements:
+Private attribute:
+hazardType (String)
+Constructor:
+HazardResponse(String hazardType) — initializes hazard type
+Getter:
+getHazardType()
+Abstract methods:
+public abstract String generateAlert();
+public abstract String generateRescuePlan();
+Concrete method:
+displayResponse()
+Prints:
+Hazard type
+Alert message
+Rescue plan
+Calls abstract methods internally
+🟥 2. Concrete Class: AlertService extends HazardResponse
+📌 Purpose:
+
+Handles alert message generation based on hazard type.
+
+📋 Requirements:
+Constructor:
+AlertService(String hazardType)
+First line: super(hazardType);
+Override method:
+generateAlert()
+Returns alert message depending on hazard:
+FLOOD → Flood Alert
+FIRE → Fire Emergency
+EARTHQUAKE → Earthquake Warning
+HEATWAVE → Heatwave Alert
+NONE → No Hazard
+Note:
+This class focuses only on alerts
+🟦 3. Concrete Class: RescueService extends HazardResponse
+📌 Purpose:
+
+Provides rescue and emergency action suggestions.
+
+📋 Requirements:
+Constructor:
+RescueService(String hazardType)
+First line: super(hazardType);
+Override method:
+generateRescuePlan()
+Returns actions:
+FLOOD → evacuation, boats
+FIRE → fire brigade
+EARTHQUAKE → medical teams
+HEATWAVE → cooling centers
+NONE → no action
+Note:
+This class focuses only on response actions
+🟩 4. Main Class: ClimateApp
+📌 Purpose:
+
+Controls program execution and connects all modules.
+
+📋 Requirements:
+In main method:
+Get hazard type (from detection module or input)
+Create objects:
+AlertService
+RescueService
+Call:
+alert generation
+rescue generation
+Display output in formatted style
+Important Note:
+You cannot directly instantiate HazardResponse (abstract class)
