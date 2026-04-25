@@ -44,6 +44,6 @@ public class Hazard {
         System.out.println("  HAZARD TYPE  : " + getHazardType());
         System.out.println("  ALERT        : " + generateAlert());
         System.out.println("  RESCUE PLAN  : " + generateRescuePlan());
-        System.out.println("============================================");
+        System.out.println("============================================+");
     }
 }
