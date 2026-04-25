@@ -28,6 +28,6 @@ public class Hazard {
 
     @Override
     public String toString() {
-        return "Hazard [ Type=" + type + " | Severity=" + severity + " ]";
+        return "Hazard:\n Type = " + type + " | Severity = " + severity + " ";
     }
 }

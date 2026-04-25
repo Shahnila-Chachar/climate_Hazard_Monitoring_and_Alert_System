@@ -7,6 +7,6 @@ public class Main {
         Hazard hazard = new Hazard("FLOOD", "HIGH");
 
         System.out.println(sensor);
-        hazard.displayResponse();
+        System.out.println(hazard);
     }
 }
