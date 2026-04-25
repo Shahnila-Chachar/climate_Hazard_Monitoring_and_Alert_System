@@ -21,7 +21,11 @@ public class Main {
         scanner.nextLine();
 
         System.out.println("Enter Hazard Type:");
+<<<<<<< HEAD
         String hazardType = scanner.nextLine();   // (still here, but not really needed)
+=======
+        String hazardType = scanner.nextLine(); // (still here, but not really needed)
+>>>>>>> 1498e42f7f217b2cf1fb222360ad90b3f21493ee
 
         Sensor sensor = new Sensor(temp, rainfall, vibration);
         Hazard hazard = new Hazard(hazardType, "HIGH");
@@ -32,7 +36,10 @@ public class Main {
         System.out.println(sensor);
         System.out.println(hazard);
 
+<<<<<<< HEAD
         // ✅ FIXED PART
+=======
+>>>>>>> 1498e42f7f217b2cf1fb222360ad90b3f21493ee
         String type = hazard.getType();
         HazardResponse response = new RescueService(type);
 
