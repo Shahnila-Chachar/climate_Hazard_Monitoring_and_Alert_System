@@ -1,52 +1,33 @@
 package Model;
+
 public class Hazard {
 
-    private String hazardType;
+    private String type;
+    private String severity;
 
-    public Hazard(String hazardType) {
-        this.hazardType = hazardType;
+    public Hazard(String type, String severity) {
+        this.type = type;
+        this.severity = severity;
     }
 
-    public String getHazardType() {
-        return hazardType;
+    public String getType() {
+        return type;
     }
 
-    public String generateAlert() {
-        switch (hazardType.toUpperCase()) {
-            case "FLOOD":
-                return "Flood Alert";
-            case "FIRE":
-                return "Fire Emergency";
-            case "EARTHQUAKE":
-                return "Earthquake Warning";
-            case "HEATWAVE":
-                return "Heatwave Alert";
-            default:
-                return "No Hazard";
-        }
+    public String getSeverity() {
+        return severity;
     }
 
-    public String generateRescuePlan() {
-        switch (hazardType.toUpperCase()) {
-            case "FLOOD":
-                return "Evacuation, Boats";
-            case "FIRE":
-                return "Fire Brigade";
-            case "EARTHQUAKE":
-                return "Medical Teams";
-            case "HEATWAVE":
-                return "Cooling Centers";
-            default:
-                return "No Action Required";
-        }
+    public void setType(String type) {
+        this.type = type;
     }
 
-    public void displayResponse() {
-        System.out.println("============================================");
-        System.out.println("  HAZARD TYPE  : " + getHazardType());
-        System.out.println("  ALERT        : " + generateAlert());
-        System.out.println("  RESCUE PLAN  : " + generateRescuePlan());
-        System.out.println("============================================+");
+    public void setSeverity(String severity) {
+        this.severity = severity;
+    }
+
+    @Override
+    public String toString() {
+        return "Hazard [ Type=" + type + " | Severity=" + severity + " ]";
     }
 }
-
