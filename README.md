@@ -8,6 +8,7 @@ This project is a Java-based simulation system that detects climate hazards such
 The system analyzes the input, generates alerts, and suggests appropriate rescue actions. It demonstrates how real-world disaster monitoring systems can be structured using Object-Oriented Programming (OOP).
 
 🎯 Purpose
+
 Simulate climate hazard detection
 Generate alerts based on environmental conditions
 Suggest rescue actions for each hazard
