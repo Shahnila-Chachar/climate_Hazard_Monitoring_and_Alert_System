@@ -2,7 +2,7 @@ package service;
 
 class RescueService extends HazardResponse {
 
-    RescueService(String hazardType){
+    public RescueService(String hazardType){
         super(hazardType);
     }
 
@@ -39,3 +39,4 @@ class RescueService extends HazardResponse {
         System.out.println("\n===============================================");
     }
 }
+
