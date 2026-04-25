@@ -1,6 +1,6 @@
 package service;
 
-    class AlertServices extends HazardResponse{
+    public class AlertServices extends HazardResponse{
 	AlertServices(String hazardType){
 		super(hazardType);
 	}
