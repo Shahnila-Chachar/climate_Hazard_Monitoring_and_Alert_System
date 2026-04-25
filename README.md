@@ -75,7 +75,7 @@ Designed project structure
 Created SensorData and Hazard classes
 Handled input validation and data handling
 
-👤 Saniya Ilyas
+👤 Sania Ilyas
 
 Implemented DetectionService
 Defined hazard detection rules
