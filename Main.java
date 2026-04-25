@@ -1,6 +1,9 @@
 import java.util.Scanner;
 import Model.Hazard;
 import Model.Sensor;
+import service.HazardResponse;
+import service.Detectionsensor;
+import service.RescueService;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,18 +21,22 @@ public class Main {
         scanner.nextLine();
 
         System.out.println("Enter Hazard Type:");
-        String hazardType = scanner.nextLine();
+        String hazardType = scanner.nextLine(); // (still here, but not really needed)
 
         Sensor sensor = new Sensor(temp, rainfall, vibration);
         Hazard hazard = new Hazard(hazardType, "HIGH");
-        RescueService rescueService = new RescueService();
 
-        rescueService.display(
-                hazard.getType(),
-                alert,
-                "Recommended Action: Evacuate immediately!");
+        Detectionsensor detect = new Detectionsensor();
+        hazard = detect.detectHazard(sensor);
+
         System.out.println(sensor);
         System.out.println(hazard);
 
+        String type = hazard.getType();
+        HazardResponse response = new RescueService(type);
+
+        response.displayResponse();
+
+        scanner.close();
     }
 }

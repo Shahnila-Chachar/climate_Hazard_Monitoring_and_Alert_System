@@ -26,16 +26,4 @@ class RescueService extends HazardResponse {
         else
             return "All is well.";
     }
-
-    public void display(String hazardType, String alert, String rescue) {
-        System.out.println("===============================================");
-        System.out.println(" CLIMATE HAZARD MONITORING AND ALERT SYSTEM ");
-        System.out.println("===============================================");
-
-        System.out.println("\nHazard Type: " + hazardType);
-        System.out.println("\nAlert: " + alert);
-        System.out.println("\nRecommended Action: " + rescue);
-
-        System.out.println("\n===============================================");
-    }
 }
