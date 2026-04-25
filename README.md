@@ -85,6 +85,8 @@ Managed disaster identification logic
 Developed AlertService
 Developed RescueService
 Managed output formatting and console UI
+
+
 ▶️ How to Run the Project
 ✅ Requirements
 JDK 8 or above
