@@ -6,6 +6,9 @@ public class Hazard {
     public Hazard(String hazardType) {
         this.hazardType = hazardType;
     }
+    public Hazard(){
+        
+    }
 
     public String getHazardType() {
         return hazardType;
