@@ -3,7 +3,7 @@ import java.awt.*;
 import Model.Sensor;
 import Model.Hazard;
 import service.Detectionsensor;
-import service.AlertService;
+import service.AlertServices;
 import service.RescueService;
 
 public class MainGUI extends JFrame {
@@ -51,7 +51,7 @@ public class MainGUI extends JFrame {
                 String type = hazard.getType();
 
                 // YOUR PART USED HERE ✅
-                AlertService alert = new AlertService(type);
+                AlertServices alert = new AlertServices(type);
                 RescueService rescue = new RescueService(type);
 
                 String alertMsg = alert.generateAlert();
