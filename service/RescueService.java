@@ -73,7 +73,7 @@ public class RescueService extends HazardResponse {
 
     public static void display(String hazardType, String alert, String rescue) {
 
-        Solutions s1 = new Solutions("Flood");
+        Solutions s1 = new Solutions(hazardType);
         System.out.println("===============================================");
         System.out.println(" CLIMATE HAZARD MONITORING AND ALERT SYSTEM ");
         System.out.println("===============================================");
