@@ -213,7 +213,6 @@ Acts as the entry point of the application.
 * Generate alerts
 * Display rescue plans
 
----
 
 # OOP Concepts Implemented
 
@@ -262,7 +261,6 @@ java ClimateApp
 
 Or simply run the project using your preferred Java IDE.
 
----
 
 # Future Enhancements
 
@@ -279,7 +277,7 @@ The project can be extended with:
 
 # 📹 Project Demonstration
 
-> Add your YouTube project demo link here.
+> Our YouTube project demo link:
 
 
 Demo Video Link:
@@ -287,7 +285,7 @@ Demo Video Link:
 
 # GitHub Repository
 
-> Add your GitHub repository link here.
+> Our GitHub repository link:
 
 ```text
 GitHub Repository Link: https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
