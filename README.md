@@ -86,7 +86,7 @@ Represents a detected climate hazard.
 ### Responsibilities
 
 * Store detected hazard information
-* Manage hazard classification and severity levels
+* Manage hazard classification & severity levels
 
 ---
 
