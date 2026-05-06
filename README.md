@@ -1,4 +1,4 @@
-# Climate Hazard Monitoring & Alert System
+<img width="841" height="446" alt="image" src="https://github.com/user-attachments/assets/fa7b522d-7787-4736-8f63-fb4b3a4ac2f3" /># Climate Hazard Monitoring & Alert System
 
 ### A Java-based Object-Oriented Programming (OOP) project designed to simulate real-time climate hazard detection, alert generation, and emergency response planning.
 
@@ -40,24 +40,8 @@ This project demonstrates how real-world disaster monitoring systems can be deve
 The project follows a layered architecture to ensure modularity and maintainability.
 
 ## Project Structure
-climate-hazard-monitoring-system/
-│
-├── model/
-│   ├── SensorData.java
-│   └── Hazard.java
-│
-├── service/
-│   ├── DetectionService.java
-│   ├── AlertService.java
-│   └── RescueService.java   
-│   ├── DetectionSensors.java
-│   ├── AlertService.java
-│   └── 
-├── abstracts/
-│   └── HazardResponse.java
-│
-└── ui/
-    └── ClimateApp.java
+<img width="841" height="446" alt="image" src="https://github.com/user-attachments/assets/2bc79e6e-6137-4299-b5c0-284e0cd62d0a" />
+
 
 
 # Model Layer (Data Layer)
