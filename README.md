@@ -1,4 +1,13 @@
-<img width="841" height="446" alt="image" src="https://github.com/user-attachments/assets/fa7b522d-7787-4736-8f63-fb4b3a4ac2f3" /># Climate Hazard Monitoring & Alert System
+# Climate Hazard Monitoring & Alert System
+
+## Team Contributions
+
+| Member       | Responsibilities                                           |
+| ------------ | ---------------------------------------------------------- |
+| **Shahnila**    | Project structure, SensorData & Hazard classes, validation, README, Designed Main.Java |
+| **Saniya Ilyas** | DetectionService & hazard detection logic, Designed GUI                  |
+| **Taiba Fatima** | AlertService, RescueService & Solutions, Edited README FILE                 |
+
 
 ### A Java-based Object-Oriented Programming (OOP) project designed to simulate real-time climate hazard detection, alert generation, and emergency response planning.
 
@@ -60,14 +69,11 @@ Stores environmental monitoring data collected from sensors.
 
 ### Responsibilities
 
-* Store environmental readings
-* Encapsulate sensor information
-* Provide controlled data access using getters/setters
-
----
+**Store environmental readings**
+**Encapsulate sensor information**
+**Provide controlled data access using getters/setters**
 
 ##  Hazard.java
-
 Represents a detected climate hazard.
 
 ### Attributes
@@ -165,7 +171,6 @@ Displays:
 * Alert message
 * Rescue strategy
 
----
 
 # AlertService extends HazardResponse
 
@@ -225,16 +230,6 @@ Acts as the entry point of the application.
 | Modularity             | Layered package structure                          |
 | Separation of Concerns | Each class has a single responsibility             |
 | Scalability            | Easy to add future hazards/modules                 |
-
-
-# Team Contributions
-
-| Member       | Responsibilities                                           |
-| ------------ | ---------------------------------------------------------- |
-| **Shahnila**    | Project structure, SensorData & Hazard classes, validation |
-| **Saniya Ilyas** | DetectionService & hazard detection logic                  |
-| **Taiba Fatima** | AlertService, RescueService & console UI                   |
-
 
 
 # How to Run the Project
