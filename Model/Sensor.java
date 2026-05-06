@@ -1,3 +1,4 @@
+package Model;
 public class Sensor {
 
     private double temperature;
@@ -37,7 +38,7 @@ public class Sensor {
     @Override
     public String toString() {
         return String.format(
-                "Sensor [Temperature = %.1f°C, Rainfall = %.1fmm, Vibration = %.2fg]",
+                "Sensor:\n Temperature = %.1f°C, Rainfall = %.1fmm, Vibration = %.2fg",
                 temperature, rainfall, vibration);
     }
 }
