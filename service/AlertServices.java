@@ -1,10 +1,9 @@
 package service;
 
-
-    public class AlertServices extends HazardResponse{
-	public AlertServices(String hazardType){
-		super(hazardType);
-	}
+public class AlertServices extends HazardResponse {
+    public AlertServices(String hazardType) {
+        super(hazardType);
+    }
 
     @Override
     public String generateAlert() {

@@ -1,35 +1,35 @@
 package service;
 
-class Solutions{
+class Solutions {
     private String hazardType;
 
-    public Solutions(String hazardType){
+    public Solutions(String hazardType) {
         this.hazardType = hazardType;
 
     }
 
-    public String CreateSolutions(){
-        if(hazardType.equalsIgnoreCase("flood"))
-        return """
-                -Improve drainage Systems.
-                -Plant more and more tress.
-                -Build flood shelters.
-                """;
+    public String CreateSolutions() {
+        if (hazardType.equalsIgnoreCase("flood"))
+            return """
+                    -Improve drainage Systems.
+                    -Plant more and more tress.
+                    -Build flood shelters.
+                    """;
 
-        else if(hazardType.equalsIgnoreCase("fire"))
+        else if (hazardType.equalsIgnoreCase("fire"))
             return """
                     -Install fire alarms
                     -Avoid deforestration.
                     -promote Aforestration.
                     """;
-        
-        else if(hazardType.equalsIgnoreCase("earthquake"))
+
+        else if (hazardType.equalsIgnoreCase("earthquake"))
             return """
                     -Conduct safety drills.
                     -Construct earthquake-resistant building.
                     -install sesmic monitoring systems.
                     """;
-        else if(hazardType.equalsIgnoreCase("heatwave"))
+        else if (hazardType.equalsIgnoreCase("heatwave"))
             return """
                     -Create cooling centers.
                     - Reduce carbon emission.
@@ -38,13 +38,11 @@ class Solutions{
 
         else
             return "No climate hazard detected";
-                
+
     }
 }
 
-
 public class RescueService extends HazardResponse {
-
 
     public RescueService(String hazardType) {
         super(hazardType);
@@ -86,4 +84,3 @@ public class RescueService extends HazardResponse {
         System.out.println("\n===============================================");
     }
 }
-

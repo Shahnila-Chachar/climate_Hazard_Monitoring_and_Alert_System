@@ -1,195 +1,302 @@
-# climate_Hazard_Monitoring_and_Alert_System
+# Climate Hazard Monitoring & Alert System
 
-🌍 Climate Hazard Monitoring and Alert System
-📖 Project Overview
+## Team Contributions
 
-This project is a Java-based simulation system that detects climate hazards such as floods, earthquakes, fires, and heatwaves using environmental input data like temperature, rainfall, and ground vibration.
-
-The system analyzes the input, generates alerts, and suggests appropriate rescue actions. It demonstrates how real-world disaster monitoring systems can be structured using Object-Oriented Programming (OOP).
-
-🎯 Purpose
-
-Simulate climate hazard detection
-Generate alerts based on environmental conditions
-Suggest rescue actions for each hazard
-Apply OOP concepts in a real-life inspired system
-🧩 Project Structure
-🔹 Model Package (Data Layer)
-
-SensorData.java
-
-Responsibility: Stores environmental data
-Fields:
-temperature (double)
-rainfall (double)
-vibration (double)
-
-Hazard.java
-
-Responsibility: Represents detected hazard
-Fields:
-type (String)
-severity (String)
-🔹 Service Package (Logic Layer)
-
-DetectionService.java
-
-Responsibility: Analyzes SensorData
-Detection Rules:
-High rainfall → Flood
-High temperature → Heatwave / Fire
-High vibration → Earthquake
-
-AlertService.java
-
-Responsibility: Generates alert messages
-Examples:
-“FLOOD ALERT in affected area”
-“EARTHQUAKE WARNING detected”
-
-RescueService.java
-
-Responsibility: Suggests rescue actions based on hazard type
-Examples:
-Flood → Boats, evacuation, rescue teams
-Earthquake → Medical aid, shelters
-Fire → Fire brigade, emergency response
-🔹 Main / UI Layer
-
-Main.java
-
-Responsibility: Entry point of the program
-Takes user input from console
-Calls all services
-Displays final alert and rescue suggestions
-🧠 OOP Concepts Used
-Encapsulation: Private fields with getters/setters
-Separation of Concerns: Each class has a single responsibility
-Modularity: Divided into Model, Service, and UI layers
-Scalability: Easy to add new hazards or features
-👥 Work Distribution
-
-👤 Shahnila
-
-Designed project structure
-Created SensorData and Hazard classes
-Handled input validation and data handling
-
-👤 Saniya Ilyas
-
-Implemented DetectionService
-Defined hazard detection rules
-Managed disaster identification logic
-
-👤 Taiba Fatima
-
-Developed AlertService
-Developed RescueService
-Managed output formatting and console UI
+| Member       | Responsibilities                                           |
+| ------------ | ---------------------------------------------------------- |
+| **Shahnila**    | Project structure, SensorData & Hazard classes, validation, README, Designed Main.Java |
+| **Saniya Ilyas** | DetectionService & hazard detection logic, Designed GUI                  |
+| **Taiba Fatima** | AlertService, RescueService & Solutions, Edited README FILE                 |
 
 
-▶️ How to Run the Project
-✅ Requirements
-JDK 8 or above
-Any Java IDE (e.g., VS Code, IntelliJ, Eclipse)
-🚀 Steps
+### A Java-based Object-Oriented Programming (OOP) project designed to simulate real-time climate hazard detection, alert generation, and emergency response planning.
 
-1. Compile:
+# Project Overview
+The **Climate Hazard Monitoring & Alert System** is a simulation-based Java application that monitors environmental conditions and detects potential climate hazards such as:
 
-javac Main.java
+## 1) Floods
+## 2) Heatwaves
+## 3) Fires
+## 4) Earthquakes
 
-2. Run:
+The system processes environmental sensor inputs including:
 
-java Main
+##* Temperature
+##* Rainfall
+##* Ground Vibration
 
-Or simply run Main.java using your IDE.
+Based on the analyzed data, the application:
 
-🌱 Future Improvements 
-Add GUI using Java Swing
-Store data using a database (MySQL)
-Integrate real-time weather APIs
-Improve prediction accuracy
-📌 Final Note
+**1. Detects hazards**
+**2. Generates warning alerts**
+**3. Suggests rescue and emergency response plans**
 
-This project is a basic simulation of how climate hazard monitoring systems work. It provides a strong understanding of how real-world disaster detection and alert systems can be designed using Java and OOP principles.
+This project demonstrates how real-world disaster monitoring systems can be developed using **Object-Oriented Programming principles**.
 
 
-Class Design (Your Project Skeleton)
-🔷 1. Abstract Class: HazardResponse
-📌 Purpose:
+# Project Objectives
 
-Represents a general response to any hazard.
-It defines a structure for alerts and rescue actions, but does not implement them.
+**Simulate climate hazard detection systems**
+**Monitor environmental sensor data**
+**Generate intelligent hazard alerts**
+**Provide rescue and emergency recommendations**
+**Apply real-world OOP concepts in Java**
+**Build a modular and scalable software architecture**
 
-📋 Requirements:
-Private attribute:
-hazardType (String)
-Constructor:
-HazardResponse(String hazardType) — initializes hazard type
-Getter:
-getHazardType()
-Abstract methods:
+---
+
+# System Architecture
+The project follows a layered architecture to ensure modularity and maintainability.
+
+## Project Structure
+<img width="841" height="446" alt="image" src="https://github.com/user-attachments/assets/2bc79e6e-6137-4299-b5c0-284e0cd62d0a" />
+
+
+
+# Model Layer (Data Layer)
+
+##  SensorData.java
+
+Stores environmental monitoring data collected from sensors.
+
+### Attributes
+
+| Field       | Type   |
+| ----------- | ------ |
+| temperature | double |
+| rainfall    | double |
+| vibration   | double |
+
+### Responsibilities
+
+**Store environmental readings**
+**Encapsulate sensor information**
+**Provide controlled data access using getters/setters**
+
+##  Hazard.java
+Represents a detected climate hazard.
+
+### Attributes
+
+| Field    | Type   |
+| -------- | ------ |
+| type     | String |
+| severity | String |
+
+### Responsibilities
+
+* Store detected hazard information
+* Manage hazard classification and severity levels
+
+---
+
+# Service Layer (Business Logic)
+
+## DetectionService.java
+
+Analyzes sensor data and identifies possible hazards.
+
+### Detection Rules
+
+| Condition             | Hazard          |
+| --------------------- | --------------- |
+| High Rainfall         | Flood           |
+| High Temperature      | Heatwave / Fire |
+| High Ground Vibration | Earthquake      |
+
+### Responsibilities
+
+* Analyze environmental data
+* Detect hazard types
+* Trigger system responses
+
+---
+
+## AlertService.java
+
+Generates warning alerts based on detected hazards.
+
+### Example Alerts
+
+**FLOOD ALERT detected**
+**EARTHQUAKE WARNING issued**
+**FIRE EMERGENCY reported**
+**HEATWAVE ALERT activated**
+
+---
+
+## RescueService.java
+
+Suggests rescue and emergency response plans.
+
+### Rescue Recommendations
+
+| Hazard     | Suggested Response                  |
+| ---------- | ----------------------------------- |
+| Flood      | Evacuation boats & rescue teams     |
+| Earthquake | Medical camps & shelters            |
+| Fire       | Fire brigade & emergency response   |
+| Heatwave   | Cooling centers & hydration support |
+
+---
+
+# Abstract Class Design
+
+## HazardResponse.java (Abstract Class)
+
+The system uses abstraction to define a generalized response structure for all hazards.
+
+### Features
+
+### Private Attribute
+private String hazardType;
+
+
+### Abstract Methods
+
+```java
 public abstract String generateAlert();
 public abstract String generateRescuePlan();
-Concrete method:
+```
+
+### Concrete Method
+
+```java
 displayResponse()
-Prints:
-Hazard type
-Alert message
-Rescue plan
-Calls abstract methods internally
-🟥 2. Concrete Class: AlertService extends HazardResponse
-📌 Purpose:
+```
 
-Handles alert message generation based on hazard type.
+Displays:
 
-📋 Requirements:
-Constructor:
-AlertService(String hazardType)
-First line: super(hazardType);
-Override method:
-generateAlert()
-Returns alert message depending on hazard:
-FLOOD → Flood Alert
-FIRE → Fire Emergency
-EARTHQUAKE → Earthquake Warning
-HEATWAVE → Heatwave Alert
-NONE → No Hazard
-Note:
-This class focuses only on alerts
-🟦 3. Concrete Class: RescueService extends HazardResponse
-📌 Purpose:
+* Hazard type
+* Alert message
+* Rescue strategy
 
-Provides rescue and emergency action suggestions.
 
-📋 Requirements:
-Constructor:
-RescueService(String hazardType)
-First line: super(hazardType);
-Override method:
-generateRescuePlan()
-Returns actions:
-FLOOD → evacuation, boats
-FIRE → fire brigade
-EARTHQUAKE → medical teams
-HEATWAVE → cooling centers
-NONE → no action
-Note:
-This class focuses only on response actions
-🟩 4. Main Class: ClimateApp
-📌 Purpose:
+# AlertService extends HazardResponse
 
-Controls program execution and connects all modules.
+Responsible for generating alert messages.
 
-📋 Requirements:
-In main method:
-Get hazard type (from detection module or input)
-Create objects:
-AlertService
-RescueService
-Call:
-alert generation
-rescue generation
-Display output in formatted style
-Important Note:
-You cannot directly instantiate HazardResponse (abstract class)
+### Supported Hazard Alerts
+
+| Hazard     | Alert              |
+| ---------- | ------------------ |
+| FLOOD      | Flood Alert        |
+| FIRE       | Fire Emergency     |
+| EARTHQUAKE | Earthquake Warning |
+| HEATWAVE   | Heatwave Alert     |
+| NONE       | No Hazard Detected |
+
+---
+
+# RescueService extends HazardResponse
+
+Provides rescue and emergency planning.
+
+### Supported Rescue Actions
+
+| Hazard     | Rescue Action      |
+| ---------- | ------------------ |
+| FLOOD      | Evacuation & boats |
+| FIRE       | Fire brigade       |
+| EARTHQUAKE | Medical response   |
+| HEATWAVE   | Cooling centers    |
+| NONE       | No action required |
+
+---
+
+# Main Application
+
+## Main.java
+
+Acts as the entry point of the application.
+
+### Responsibilities
+
+* Take user input
+* Process environmental data
+* Call detection services
+* Generate alerts
+* Display rescue plans
+
+
+# OOP Concepts Implemented
+
+| Concept                | Implementation                                     |
+| ---------------------- | -------------------------------------------------- |
+| Encapsulation          | Private fields with getters/setters                |
+| Abstraction            | HazardResponse abstract class                      |
+| Inheritance            | AlertService & RescueService extend HazardResponse |
+| Polymorphism           | Method overriding for alert/rescue generation      |
+| Modularity             | Layered package structure                          |
+| Separation of Concerns | Each class has a single responsibility             |
+| Scalability            | Easy to add future hazards/modules                 |
+
+
+# How to Run the Project
+
+## Requirements
+
+* JDK 8 or above
+* Java IDE (VS Code, IntelliJ IDEA, Eclipse)
+
+
+## Compile the Program
+
+```bash
+javac ClimateApp.java
+```
+
+
+
+## Run the Program
+
+```bash
+java ClimateApp
+```
+
+Or simply run the project using your preferred Java IDE.
+
+
+# Future Enhancements
+
+The project can be extended with:
+
+* GUI using Java Swing or JavaFX
+* Real-time weather API integration
+* MySQL database connectivity
+* Advanced prediction algorithms
+* GPS-based disaster tracking
+* Mobile notification system
+* AI-powered hazard prediction
+
+
+# 📹 Project Demonstration
+
+> Our YouTube project demo link:
+
+
+Demo Video Link:
+
+
+# GitHub Repository
+
+> Our GitHub repository link:
+
+```text
+GitHub Repository Link: https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
+```
+
+# Conclusion
+
+The **Climate Hazard Monitoring & Alert System** demonstrates how Object-Oriented Programming can be used to simulate real-world environmental monitoring and disaster management systems.
+
+The project provides a strong foundation in:
+
+* Java application design
+* OOP architecture
+* Abstraction & inheritance
+* Modular software development
+* Real-world problem solving
+
+It also creates opportunities for future expansion into advanced climate monitoring technologies.
+

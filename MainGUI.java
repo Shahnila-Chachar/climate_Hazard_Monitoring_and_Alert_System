@@ -50,7 +50,6 @@ public class MainGUI extends JFrame {
 
                 String type = hazard.getType();
 
-                // YOUR PART USED HERE ✅
                 AlertServices alert = new AlertServices(type);
                 RescueService rescue = new RescueService(type);
 
@@ -59,10 +58,9 @@ public class MainGUI extends JFrame {
 
                 resultArea.setText(
                         "Hazard Type: " + type +
-                        "\nSeverity: " + hazard.getSeverity() +
-                        "\n\nAlert: " + alertMsg +
-                        "\nRescue Plan: " + rescueMsg
-                );
+                                "\nSeverity: " + hazard.getSeverity() +
+                                "\n\nAlert: " + alertMsg +
+                                "\nRescue Plan: " + rescueMsg);
 
             } catch (Exception ex) {
                 resultArea.setText("Invalid input! Please enter numeric values.");
