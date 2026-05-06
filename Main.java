@@ -36,8 +36,10 @@ public class Main {
                 String type = hazard.getType();
                 HazardResponse response = new RescueService(type);
 
-                response.displayResponse();
+                String alert = response.generateAlert();
+                String rescue = response.generateRescuePlan();
 
+                RescueService.display(type, alert, rescue);
                 scanner.close();
         }
 }
