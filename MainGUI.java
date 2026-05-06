@@ -5,6 +5,7 @@ import Model.Hazard;
 import service.Detectionsensor;
 import service.AlertServices;
 import service.RescueService;
+import service.Solutions;
 
 public class MainGUI extends JFrame {
 
@@ -52,7 +53,8 @@ public class MainGUI extends JFrame {
 
                 AlertServices alert = new AlertServices(type);
                 RescueService rescue = new RescueService(type);
-
+                Solutions solutions = new Solutions(type);
+                String solutionMsg = solutions.CreateSolutions();
                 String alertMsg = alert.generateAlert();
                 String rescueMsg = rescue.generateRescuePlan();
 
@@ -60,7 +62,8 @@ public class MainGUI extends JFrame {
                         "Hazard Type: " + type +
                                 "\nSeverity: " + hazard.getSeverity() +
                                 "\n\nAlert: " + alertMsg +
-                                "\nRescue Plan: " + rescueMsg);
+                                "\nRescue Plan: " + rescueMsg +
+                                "\n\nSolutions:\n" + solutionMsg);
 
             } catch (Exception ex) {
                 resultArea.setText("Invalid input! Please enter numeric values.");
