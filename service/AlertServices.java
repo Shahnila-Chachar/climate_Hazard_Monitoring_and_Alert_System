@@ -10,13 +10,13 @@ public class AlertServices extends HazardResponse {
 
         String type = getHazardType();
         if (type.equalsIgnoreCase("flood"))
-            return "Alert: Flood Risk Detected!";
+            return "Flood Risk Detected!";
         else if (type.equalsIgnoreCase("fire"))
-            return "Alert: Fire Emergency";
+            return "Fire Emergency!";
         else if (type.equalsIgnoreCase("	EarthQuake"))
-            return "Alert: EarthQuake";
+            return "EarthQuake Risk!";
         else if (type.equalsIgnoreCase("Heatwave"))
-            return "Alert: Heatwave Risk";
+            return "Heatwave Risk!";
         else
             return "No hazard detected";
     }
