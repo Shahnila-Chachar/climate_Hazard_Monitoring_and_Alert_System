@@ -6,7 +6,7 @@
 | ---------------- | ----------- | ----------------------------------------------------------------------------------- |
 | **Shahnila**     | **023-25-0102** | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
 | **Saniya Ilyas** | **023-25-0098** | DetectionService & hazard detection logic, Designed GUI                             |
-| **Taiba Fatima** | **023-25-0115** | AlertService, RescueService & Solutions, Edited README FILE                         |
+| **Taiba Fatima** | **023-25-0111** | AlertService, RescueService & Solutions, Edited README FILE                         |
 
 
 
@@ -51,7 +51,8 @@ This project demonstrates how real-world disaster monitoring systems can be deve
 The project follows a layered architecture to ensure modularity and maintainability.
 
 ## Project Structure
-<img width="841" height="446" alt="image" src="https://github.com/user-attachments/assets/2bc79e6e-6137-4299-b5c0-284e0cd62d0a" />
+<img width="1528" height="1029" alt="image" src="https://github.com/user-attachments/assets/99c47afe-5596-4aff-b4b9-f3238b31fc64" />
+
 
 
 
