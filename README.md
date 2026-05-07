@@ -4,7 +4,7 @@
 
 | Member       | Responsibilities                                           |
 | ------------ | ---------------------------------------------------------- |
-| **Shahnila**    | Project structure, SensorData & Hazard classes, validation, README, Designed Main.Java |
+| **Shahnila**    | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
 | **Saniya Ilyas** | DetectionService & hazard detection logic, Designed GUI                  |
 | **Taiba Fatima** | AlertService, RescueService & Solutions, Edited README FILE                 |
 
@@ -21,9 +21,9 @@ The **Climate Hazard Monitoring & Alert System** is a simulation-based Java appl
 
 The system processes environmental sensor inputs including:
 
-##* Temperature
-##* Rainfall
-##* Ground Vibration
+## * Temperature
+## * Rainfall
+## * Ground Vibration
 
 Based on the analyzed data, the application:
 
@@ -183,7 +183,6 @@ Responsible for generating alert messages.
 | FLOOD      | Flood Alert        |
 | FIRE       | Fire Emergency     |
 | EARTHQUAKE | Earthquake Warning |
-| HEATWAVE   | Heatwave Alert     |
 | NONE       | No Hazard Detected |
 
 ---
@@ -199,7 +198,6 @@ Provides rescue and emergency planning.
 | FLOOD      | Evacuation & boats |
 | FIRE       | Fire brigade       |
 | EARTHQUAKE | Medical response   |
-| HEATWAVE   | Cooling centers    |
 | NONE       | No action required |
 
 ---
@@ -243,7 +241,7 @@ Acts as the entry point of the application.
 ## Compile the Program
 
 ```bash
-javac ClimateApp.java
+javac Main.java
 ```
 
 
@@ -251,7 +249,7 @@ javac ClimateApp.java
 ## Run the Program
 
 ```bash
-java ClimateApp
+java Main
 ```
 
 Or simply run the project using your preferred Java IDE.
@@ -283,7 +281,7 @@ Demo Video Link:
 > Our GitHub repository link:
 
 ```text
-GitHub Repository Link: https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
+https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
 ```
 
 # Conclusion
