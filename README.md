@@ -17,12 +17,14 @@ The **Climate Hazard Monitoring & Alert System** is a simulation-based Java appl
 ## 1) Floods
 ## 2) Fires
 ## 3) Earthquakes
+## 4) Heatwaves
 
 The system processes environmental sensor inputs including:
 
 ## * Temperature
 ## * Rainfall
 ## * Ground Vibration
+## * Heatwaves
 
 Based on the analyzed data, the application:
 
