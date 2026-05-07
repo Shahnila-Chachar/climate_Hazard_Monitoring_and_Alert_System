@@ -2,11 +2,12 @@
 
 ## Team Contributions
 
-| Member       | Responsibilities                                           |
-| ------------ | ---------------------------------------------------------- |
-| **Shahnila**    | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
-| **Saniya Ilyas** | DetectionService & hazard detection logic, Designed GUI                  |
-| **Taiba Fatima** | AlertService, RescueService & Solutions, Edited README FILE                 |
+| Member           | CMS_ID      | Responsibilities                                                                    |
+| ---------------- | ----------- | ----------------------------------------------------------------------------------- |
+| **Shahnila**     | 023-25-0102 | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
+| **Saniya Ilyas** | 023-25-0098 | DetectionService & hazard detection logic, Designed GUI                             |
+| **Taiba Fatima** | 023-25-0115 | AlertService, RescueService & Solutions, Edited README FILE                         |
+
 
 
 ### A Java-based Object-Oriented Programming (OOP) project designed to simulate real-time climate hazard detection, alert generation, and emergency response planning.
