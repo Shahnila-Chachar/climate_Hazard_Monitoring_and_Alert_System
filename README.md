@@ -2,11 +2,11 @@
 
 ## Team Contributions
 
-| Member           | CMS_ID      | Responsibilities                                                                    |
-| ---------------- | ----------- | ----------------------------------------------------------------------------------- |
-| **Shahnila**     | **023-25-0102** | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
-| **Saniya Ilyas** | **023-25-0098** | DetectionService & hazard detection logic, Designed GUI                             |
-| **Taiba Fatima** | **023-25-0111** | AlertService, RescueService & Solutions, Edited README FILE                         |
+| Member           | CMS_ID          | Section | Responsibilities                                                                    |
+| ---------------- | --------------- | ------- | ----------------------------------------------------------------------------------- |
+| **Shahnila**     | **023-25-0102** | **D**   | Project structure, SensorData, DetectionSensor & Hazard classes, validation, README |
+| **Saniya Ilyas** | **023-25-0098** | **D**   | DetectionService & hazard detection logic, Designed GUI                             |
+| **Taiba Fatima** | **023-25-0111** | **D**   | AlertService, RescueService & Solutions, Edited README FILE                         |
 
 
 
