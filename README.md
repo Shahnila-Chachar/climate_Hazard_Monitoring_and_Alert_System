@@ -8,6 +8,21 @@
 | **Saniya Ilyas** | **023-25-0098** | **D**   | DetectionService & hazard detection logic, Designed GUI                             |
 | **Taiba Fatima** | **023-25-0111** | **D**   | AlertService, RescueService & Solutions, Edited README FILE                         |
 
+# Project Demonstration
+
+> Our YouTube project demo link:
+
+```text
+https://youtu.be/xEwJ13BurLc
+```
+
+# GitHub Repository
+
+> Our GitHub repository link:
+
+```text
+https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
+```
 
 
 ### A Java-based Object-Oriented Programming (OOP) project designed to simulate real-time climate hazard detection, alert generation, and emergency response planning.
@@ -270,22 +285,6 @@ The project can be extended with:
 * Mobile notification system
 * AI-powered hazard prediction
 
-
-# 📹 Project Demonstration
-
-> Our YouTube project demo link:
-
-```text
-https://youtu.be/xEwJ13BurLc
-```
-
-# GitHub Repository
-
-> Our GitHub repository link:
-
-```text
-https://github.com/Shahnila-Chachar/climate_Hazard_Monitoring_and_Alert_System/tree/main
-```
 
 # Conclusion
 
