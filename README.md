@@ -273,9 +273,9 @@ The project can be extended with:
 
 > Our YouTube project demo link:
 
-
-Demo Video Link:
-
+```text
+https://youtu.be/xEwJ13BurLc
+```
 
 # GitHub Repository
 
